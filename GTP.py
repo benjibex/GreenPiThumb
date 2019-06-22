@@ -1,10 +1,13 @@
 # -*- coding: utf-8 -*-
 #!/usr/bin/python
 
-import pyrebase
+#import all required libraries
+import pyrebase  # For reading and writing data to the firebase database
 import sys
-import Adafruit_DHT
+import Adafruit_DHT # To read temperature and humidity data from DHT11 sensor
 import json, requests
+import RPi.GPIO as GPIO # Raspberry Pi library to read and write sensor ports
+import time # To set manual override time for LED
 
 #create function to check sensor reading
 def LSval (LSpin):
@@ -17,8 +20,7 @@ def LSval (LSpin):
         reading += 1
     return reading
 
-import RPi.GPIO as GPIO
-import time
+
 GPIO.setmode(GPIO.BCM)
 
 #Light sensor =LS Light is LED
