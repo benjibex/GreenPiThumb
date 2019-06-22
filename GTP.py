@@ -29,7 +29,7 @@ LS=13
 
 GPIO.setup(LED,GPIO.OUT)
 config = {
-    "apiKey": "AIzaSyCgqcrbXjJozIfM-0Bxk_tMDg78dci3xR0",
+    "apiKey": "insertkeyhere",
     "authDomain": "gtpdatabase.firebaseapp.com",
     "databaseURL": "https://gtpdatabase.firebaseio.com",
     "projectId": "gtpdatabase",
